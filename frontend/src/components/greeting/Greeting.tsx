@@ -1,7 +1,7 @@
 import { useState } from "react"
 
 export default function Greeting(props: any) {
-	const [greet, setGreet] = useState({to: '', from: '', select: ''})
+	const [greet, setGreet] = useState({to: '', from: '', select: 'Greeting will go here'})
 	return (
 		<div className="Main Greet">
 			<div className="Display-Greeting">
