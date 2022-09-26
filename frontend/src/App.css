@@ -1,0 +1,344 @@
+
+/* ========================= Layout =========================*/
+
+.Layout {
+	height: 100%;
+	width: 100%;
+display: grid;
+grid-template-columns: 2fr 4fr;
+grid-template-rows: 0.5fr 5fr 0.5fr;
+grid-gap: 1px;
+border-radius: 20px;
+margin-top: 100px;
+}
+
+
+.Header{
+grid-column: span 5;
+grid-row: span 1;
+display: flex;
+flex-direction: row;
+text-shadow: 2px 2px var(--DefaultButtonColor);
+	
+	color: var(--defaultHeaderTextColor);
+padding-bottom: 10px;
+padding-top: 5px;
+}
+
+.Header > div:nth-child(1){
+	width: 150px;
+	height: 70px;
+	margin-left: 40px;
+}
+
+.Header > div:nth-child(2){
+	margin: auto;
+	width: 80px;
+	height: 70px;
+}
+
+.Menu{
+grid-column: span 1;
+grid-row: span 5;
+overflow-y: scroll;
+display: flex;
+flex-direction: column;
+gap: 30px;
+max-height: 100vh;
+padding-top: 10px;
+}
+
+.Menu > img.Menu-Icons
+{
+	width: 80%;
+	margin: 0px auto;
+	box-shadow:  0px 0px 5px 5px rgb(255, 188, 129);
+}
+
+
+
+
+.Footer{
+	grid-column: span 5;
+grid-row: span 1;
+}
+
+.Main{
+grid-column: span 4;
+grid-row: span 5;
+width: 100%;
+text-align: center;
+border-radius: 20px;
+box-shadow:  0px 0px 5px 5px rgb(255, 188, 129);
+}
+
+.Main > *
+{
+	margin: 20px auto;
+}
+
+					/* =============== Welcome =============== */
+.Radio-Group
+{
+	display: flex;
+	flex-direction: column;
+	
+	padding-top: 50px;
+	
+	font-style: italic;
+}
+
+.Welcome
+{
+	font-size: xx-large;
+	padding-top: 50px;
+	font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+					/* =============== Gift Selector =============== */
+.AddBalloon-Icon
+{
+display: flex;
+justify-content: start;
+width: 100%;
+margin: 10px 60px;
+padding-left: 10px;
+}
+
+.AddBalloon-Icon > *
+{
+	margin-right: 20px;
+	align-self: center;
+}
+
+.Select-Container
+{
+	display: flex;
+justify-content: start;
+flex-direction: column;
+align-items: flex-start;
+margin: 25px 50px;
+}
+
+.Select-Container >*
+{
+	margin: 2px;
+	
+border: none;
+}
+.Select-Container > div:nth-child(1)
+{
+	padding-left: 10px;
+}
+
+
+.Display-Cost{
+	margin: 0px 60px;
+	height: 80px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	gap: 10px;
+	border-radius: 5px;
+	overflow-y: scroll;
+	background-color: var(--DisplayCostBGColor);
+}
+
+.Display-Cost > div:nth-child(2)
+{
+	color: var(--DisplayCostColor);
+	font-weight: bold;
+}
+
+.Greet{
+	display: flex;
+	flex-direction: column;
+}
+.Display-Greeting{
+	display: flex;
+	width: 80%;
+	height: auto;
+	min-height: 20%;
+	margin: 80px auto 0px;
+	background-color: rgb(255, 211, 161);
+	text-align: center;
+	justify-content: center;
+	align-items: center;
+	border-radius: 5px;
+}
+.To-Container, .From-Container, .Select-Greeting
+{
+	display: flex;
+	flex-direction:column;
+	height: auto;
+	justify-content: flex-start;
+	align-items: flex-start;
+	width: 100%;
+	margin-block: 10px;
+	
+	border-radius: 5px;
+}
+
+.To-Container > input, .From-Container > input, .Select-Greeting > select
+{
+	height: 40px;
+	width: 80%;
+	margin: auto;
+	border: none;
+	border-radius: 5px;
+}
+.To-Container > label, .From-Container > label, .Select-Greeting > label
+{
+	height: 40px;
+	width: 80%;
+	margin: auto;
+	text-align: left;
+	
+	border-radius: 5px;
+}
+
+.GrammarInput-Container > input
+{
+	height: 75px;
+	width: 80%;
+	border-radius: 5px;
+	border: none;
+	box-shadow: 5px 5px peachpuff	;
+	background-color:  rgb(255, 211, 161);
+	text-align: center;
+	font-size: x-large;
+	
+	border-radius: 5px;
+}
+.Grammar-Button{
+	width: 60%;
+	height: 50px;
+	margin-top: 40px;
+}
+
+.Selection-Block
+{
+	background-color: pink;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	border-radius:10px;
+	width: 80%;
+	min-height: 60px;
+	margin: 30px auto;
+}
+
+.Change-Button
+{
+	margin: 45vh auto;
+	width: 20%;
+}
+/* ========================= Typography =========================*/
+
+.Layout {
+
+
+}
+
+.Header{
+font-size: 50px;
+}
+.Header > div:nth-child(1){
+	text-decoration: underline;
+	}
+
+
+
+.Main{
+
+}
+
+.AddBalloon-Icon
+{
+}
+
+
+.Menu{
+
+}
+
+.Footer{
+
+}
+
+/* ========================= Graphics =========================*/
+
+.Layout {
+
+	box-shadow: 0px 0px 10px 10px var(--AppBoxShadowColor);
+	background: linear-gradient(var(--defaultBackgroundColor),var(--AppBoxBGColor),var(--defaultBackgroundColor),var(--AppBoxBGColor), var(--defaultBackgroundColor),var(--AppBoxBGColor)) ;
+
+}
+
+.Header{
+	
+background-color: var(--HeaderBGColor);
+}
+
+.Menu{
+	
+background-color: var(--MenuBGColor);
+}
+
+.Main{
+	background-color: var(--MainBGColor);
+}
+
+.Footer{
+	background-color: var(--FooterBGColor);
+}
+
+	
+  .Color{
+	display: flex;
+	flex-direction: column;
+align-items: center;
+  }
+
+  .ColorPicker {
+	position: absolute;
+	width: 100px;
+	height: 175px;
+	background-color: var(--HeartColor);
+	-webkit-border-radius: 50px 50px 0 0;
+	-moz-border-radius: 50px 50px 0 0;
+	border-radius: 50px 50px 0 0;
+	-webkit-transform: rotate(315deg);
+	-moz-transform: rotate(315deg);
+	-ms-transform: rotate(315deg);
+	-o-transform: rotate(315deg);
+	transform: rotate(315deg);
+	margin: 100px auto;
+	margin-right: 50px;
+  }
+  
+  .ColorPicker:before {
+	position: absolute;
+	width: 175px;
+	
+	height: 100px;
+	left: 0;
+	bottom: 0;
+	content: "";
+	background-color: var(--HeartColor);
+	-webkit-border-radius: 50px 50px 0 0;
+	-moz-border-radius: 50px 50px 0 0;
+	border-radius: 0 50px 50px 0;
+  }
+  
+  .ColorPicker-Button
+  {
+	width: 100%;
+	margin-top:100px;
+	margin-bottom: -50px;
+  }
+
+  .ColorPicker-Button > button
+  {
+	background-color: var(--HeartColor);
+  }

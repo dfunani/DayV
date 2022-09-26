@@ -1,0 +1,68 @@
+:root{
+	--defaultBackgroundColor: rgb(241, 174, 255);
+	
+	--defaultHeaderTextColor: rgb(57, 57, 57);
+	--AppBoxShadowColor: rgb(255, 174, 188);
+	--AppBoxBGColor: rgb(247, 222, 255);
+	--MenuBGColor:  rgba(255, 192, 203, 0.225);
+	--HeaderBGColor:  rgba(255, 192, 203, 0.225);
+	--FooterBGColor:  rgba(255, 192, 203, 0.225);
+	--MainBGColor:  rgba(255, 193, 139, 0);
+	--MainBGColor:  #ec9fff;
+	--DefaultButtonColor: rgb(255, 68, 127);
+	--MainHeaderFontSize: 30px;
+	--DisplayCostColor: rgb(250, 67, 158);
+	--DefaultSelectColor: rgb(240, 232, 235);
+	--DisplayCostBGColor: rgb(252, 159, 255);
+	--GiftSelectorBGColor: rgba(253, 255, 140, 0.737);
+	--DefaultButtonText: white;
+	--defaultTextColor: rgb(5, 5, 5);
+	--HeartColor: rgb(255, 193, 139);
+	cursor: pointer;
+	font-size: 25px;
+
+}
+
+body
+{
+	width: 100%;
+	background-color: var(--defaultBackgroundColor);
+	color: var(--defaultTextColor);
+	margin: auto;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	max-width: 60vw;
+	overflow-x: hidden;
+}
+
+.App
+{
+	margin: 20px;
+}
+
+h1{
+	padding-bottom: 30px;
+	color: var(--defaultHeaderTextColor);
+}
+button 
+{
+	width: 80%;
+	height: 40px;
+	border-radius: 5px;
+background-color: var(--DefaultButtonColor);
+margin-left: 5px;
+border: none;
+color: var(--DefaultButtonText);
+font-size: 20px;
+}
+
+select
+{
+	width: 100%;
+	height: 40px;
+	border-radius: 5px;
+background-color: var(--DefaultSelectColor);
+padding-left: 10px;
+}
+
